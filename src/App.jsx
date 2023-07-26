@@ -1,9 +1,6 @@
 import React from "react";
-import "./styles.css"
-import cdxImage from "./images/c-d-x-unsplash.jpg"
-import loiaSplash from "./images/domenico-loia-unsplash.jpg"
-import gillesLambert from "./images/gilles-lambert-unsplash.jpg"
-import jKelly from "./images/j-kelly-brito-unsplash.jpg"
+import "./styles.css";
+
 
 function App() {
 
@@ -25,12 +22,12 @@ function App() {
         </ul>
       </nav>
     </header>
-    <section className="splash">
+    <section className="splash" style={{ backgroundImage: "url('/images/ales-nesetril-unsplash.jpg')" }}>
       <h2>Your place for tech news!</h2>
     </section>
     <main>
       <article>
-        <img src={cdxImage} />
+        <img src={"./images/c-d-x-unsplash.jpg"} />
         <h3>The best headphones of this year</h3>
         <p>
           Although earbuds are all the rage these days, true audiophiles know
@@ -43,7 +40,7 @@ function App() {
         </aside>
       </article>
       <article>
-        <img src={loiaSplash} />
+        <img src="./images/domenico-loia-unsplash.jpg" />
         <h3>The perfect work-from-home setup</h3>
         <p>
           Is your work-from-home setup making you feel blue? If working from
@@ -56,7 +53,7 @@ function App() {
         </aside>
       </article>
       <article>
-        <img src={gillesLambert} />
+        <img src="./images/gilles-lambert-unsplash.jpg" />
         <h3>What exactly is the dark web?</h3>
         <p>
           It seems like everyone has an opinion on the "dark web" these days.
@@ -69,7 +66,7 @@ function App() {
         </aside>
       </article>
       <article>
-        <img src={jKelly} />
+        <img src="./images/j-kelly-brito-unsplash.jpg" />
         <h3>Learning to code</h3>
         <p>
           If you're just getting started on your coding journey, you may be
