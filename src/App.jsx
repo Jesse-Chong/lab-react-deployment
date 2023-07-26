@@ -22,7 +22,7 @@ function App() {
         </ul>
       </nav>
     </header>
-    <section className="splash" style={{ backgroundImage: "url('/images/ales-nesetril-unsplash.jpg')" }}>
+    <section className="splash">
       <h2>Your place for tech news!</h2>
     </section>
     <main>
