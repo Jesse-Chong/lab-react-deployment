@@ -1,35 +1,119 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
+import "./styles.css"
+import cdxImage from "./images/c-d-x-unsplash.jpg"
+import loiaSplash from "./images/domenico-loia-unsplash.jpg"
+import gillesLambert from "./images/gilles-lambert-unsplash.jpg"
+import jKelly from "./images/j-kelly-brito-unsplash.jpg"
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+      <header>
+      <h1>TekNews</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Our Process</a>
+          </li>
+          <li>
+            <a href="#">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section className="splash">
+      <h2>Your place for tech news!</h2>
+    </section>
+    <main>
+      <article>
+        <img src={cdxImage} />
+        <h3>The best headphones of this year</h3>
         <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+          Although earbuds are all the rage these days, true audiophiles know
+          that nothing can beat a nice pair of headphones. TekNews has reviewed
+          all of the latest headphones and we're here to give you our thoughts.
+          What we've found may surprise you!
         </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+        <aside>
+          <a href="#">Go to article...</a>
+        </aside>
+      </article>
+      <article>
+        <img src={loiaSplash} />
+        <h3>The perfect work-from-home setup</h3>
+        <p>
+          Is your work-from-home setup making you feel blue? If working from
+          home is new for you, it's easy to become overwhelmed by decision
+          fatigue. In this article, we make it simple and tell you what you
+          absolutely <em>need</em> as opposed to what's nice to have.
+        </p>
+        <aside>
+          <a href="#">Go to article...</a>
+        </aside>
+      </article>
+      <article>
+        <img src={gillesLambert} />
+        <h3>What exactly is the dark web?</h3>
+        <p>
+          It seems like everyone has an opinion on the "dark web" these days.
+          Just how scary is the dark web? Well, you might be surprised to learn
+          that the dark web isn't all it's cracked up to be. In fact, on average
+          it's much more boring than you may expect...
+        </p>
+        <aside>
+          <a href="#">Go to article...</a>
+        </aside>
+      </article>
+      <article>
+        <img src={jKelly} />
+        <h3>Learning to code</h3>
+        <p>
+          If you're just getting started on your coding journey, you may be
+          overwhelmed by the amount of resources out there. Our team of
+          educational experts picks some of the best educational websites in
+          this article so you can learn to code quick!
+        </p>
+        <aside>
+          <a href="#">Go to article...</a>
+        </aside>
+      </article>
+    </main>
+    <footer>
+      <section>
+        <h4>About</h4>
+        <ul>
+          <li>
+            <a href="#">Who We Are</a>
+          </li>
+          <li>
+            <a href="#">Current Staff</a>
+          </li>
+          <li>
+            <a href="#">Advisory Board</a>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h4>Get Involved</h4>
+        <ul>
+          <li>
+            <a href="#">Got a tip?</a>
+          </li>
+          <li>
+            <a href="#">Careers</a>
+          </li>
+          <li>
+            <a href="#">Contact Us</a>
+          </li>
+        </ul>
+      </section>
+    </footer>
+    </div>
   )
 }
 
-export default App
+export default App;
